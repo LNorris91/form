@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <form novalidate>
+      <div class="email">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="jon@jondoe.con" required />
+        <span class="emailError"></span>
+      </div>
+      <div class="country">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="Australia">Australia</option>
+          <option value="Austria">Austria</option>
+          <option value="Belgium">Belgium</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Canada">Canada</option>
+          <option value="Denmark">Denmark</option>
+          <option value="Germany">Germany</option>
+          <option value="Hungary">Hungary</option>
+          <option value="Italy">Italy</option>
+          <option value="Japan">Japan</option>
+          <option value="Netherlands">Netherlands</option>
+          <option value="Poland">Poland</option>
+          <option selected value="US">United States</option>
+        </select>
+      </div>
+      <div class="zip">
+        <label for="zip">Zip Code</label>
+        <input type="tel" name="zip" id="zip" placeholder="12345 or 12345-1234" required />
+        <span class="zipError"></span>
+      </div>
+      <div class="pwd">
+        <label for="pwd">Password</label>
+        <input type="password" name="pwd" id="pwd" minlength="1" required />
+        <span class="pwdError"></span>
+      </div>
+      <div class="pwdConfirm">
+        <label for="pwdConfirm">Confirm Password</label>
+        <input type="password" name="pwdConfirm" id="pwdConfirm" required />
+        <span class="pwdConfirmError"></span>
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

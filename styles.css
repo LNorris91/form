@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+select {
+  width: 200px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+input:valid {
+  border-color: green;
+}
+
+span {
+  color: red;
+  position: absolute;
+  top: 42px;
+  text-wrap: nowrap;
+  align-self: center;
+  font-size: 0.9rem;
+}
+
+button {
+  margin-top: 20px;
+}
