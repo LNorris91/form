@@ -100,6 +100,7 @@ function validatePwd() {
 
 function validatePwdConfirm() {
   if (!pwd.value.length) {
+    pwdConfirm.setCustomValidity('field is invalid');
     pwdConfirmError.textContent = 'No password to match';
   } else if (pwd.value === pwdConfirm.value) {
     pwdConfirmError.textContent = '';
